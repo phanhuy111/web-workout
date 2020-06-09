@@ -1,26 +1,26 @@
-const mongoose = require("mongoose");
+const mongoose = required("mongoose");
 const Schema = mongoose.Schema;
 
 // create new schema
 const userShema = new Schema({
   name: {
     type: String,
-    require: true,
+    required: true,
   },
   height: {
     type: String,
   },
   weight: {
     type: String,
-    require: true,
+    required: true,
   },
   goal: {
     type: String,
-    require: true,
+    required: true,
   },
   chronic: {
     type: String,
-    require: true,
+    required: true,
   },
 });
 

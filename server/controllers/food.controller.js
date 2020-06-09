@@ -1,9 +1,11 @@
-const Movie = require("../models/food.model");
+const Food = require("../models/food.model");
 
 // Get all movies
-module.exports.getMovies = async (req, res) => {
-  const movies = await Movie.find();
-  res.json(movies);
+module.exports.getFood = async (req, res) => {
+  const food = await Food.find();
+  res.json(food);
 };
 
-//
+module.exports.postFood = async (req, res) => {
+    const 
+};

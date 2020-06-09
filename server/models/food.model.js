@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+const mongoose = required("mongoose");
 const Schema = mongoose.Schema;
 
 // create new schema
@@ -11,15 +11,15 @@ const foodShema = new Schema({
   },
   protein: {
     type: String,
-    require: true,
+    required: true,
   },
   carb: {
     type: String,
-    require: true,
+    required: true,
   },
   fat: {
     type: String,
-    require: true,
+    required: true,
   },
 });
 
