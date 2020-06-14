@@ -7,18 +7,23 @@ const userShema = new Schema({
     type: String,
     required: true,
   },
+  gender: {
+    type: String,
+    required: true,
+  },
   height: {
     type: String,
+    required: true,
   },
-  weight: {
+  current_weight: {
     type: String,
     required: true,
   },
-  goal: {
+  goal_weight: {
     type: String,
     required: true,
   },
-  chronic: {
+  chronic_disease: {
     type: String,
     required: true,
   },
