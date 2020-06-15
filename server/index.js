@@ -6,8 +6,8 @@ const path = require("path");
 // routes
 
 // const userRoute = require('./api/routes/user.route');
-const movieRoute = require("./routes/movie");
-const postRoute = require("./routes/post");
+const foodRoute = require("./routes/food");
+const userRoute = require("./routes/user");
 
 // connect mongodb
 mongoose.connect(
@@ -33,8 +33,8 @@ app.use(bodyParser.json());
 // use routes
 
 // app.use('/api/users', cors(), userRoute);
-app.use("/api/movies", cors(), movieRoute);
-app.use("/api/posts", cors(), postRoute);
+app.use("/api/user", cors(), userRoute);
+app.use("/api/food", cors(), foodRoute);
 
 // Serve static assets if in production
 if (process.env.NODE_ENV === "production") {
