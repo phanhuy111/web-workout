@@ -4,33 +4,37 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <div>
-      <nav
-        className={
-          this.props.bgImage
-            ? "transparent navbar navbar-default"
-            : "navbar_default"
-        }
-      >
-        <div className="container-fluid">
-          <div className="navbar-header">
-            <a href="/#/login" className="navbar-brand">
-              <img src="/images/meal-kitchen-logo.png"></img>
-            </a>
-          </div>
-          <div className={this.props.bgImage ? "hide" : "show navbar-right"}>
-            <ul className="nav navbar-nav">
-              <li>
-                <Link to="/">{"Login"}</Link>
-              </li>
-              <li>
-                <Link>{"Log Out"}</Link>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </div>
+    <nav>
+      <div className="row">
+        <img
+          src="resources/img/logo-white.png"
+          alt="FastFood logo"
+          className="logo"
+        />
+        <img
+          src="resources/img/logo.png"
+          alt="FastFood logo"
+          className="logo-black"
+        />
+        <ul className="main-nav js--main-nav">
+          <li>
+            <a href="#features">{"Food delivery"}</a>
+          </li>
+          <li>
+            <a href="#works">{"How it works"}</a>
+          </li>
+          <li>
+            <a href="#cites">{"Our cities"}</a>
+          </li>
+          <li>
+            <a href="#plans">{"Sign up"}</a>
+          </li>
+        </ul>
+        <a className="mobile-nav-icon js--nav-icon ">
+          <ion-icon className="nav-icon" name="menu" />
+        </a>
+      </div>
+    </nav>
   );
 };
 

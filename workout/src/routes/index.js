@@ -4,11 +4,13 @@ import { connect } from "react-redux";
 
 import Home from "../pages/home";
 import Contact from "../pages/contact";
+import Splash from "../pages/splash";
 
 const Routes = (props) => {
   return (
     <Switch>
-      <Route exact path="/" component={Home} />
+      <Route path="/home" component={Home} />
+      <Route exact path="/" component={Splash} />
       <Route path="/contact" component={Contact} />
     </Switch>
   );
