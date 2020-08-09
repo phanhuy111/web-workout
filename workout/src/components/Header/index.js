@@ -1,38 +1,44 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
+import { styles } from "./styles";
 
 const Header = () => {
   return (
     <nav>
-      <div className="row">
+      <div style={styles.row}>
         <img
-          src="resources/img/logo-white.png"
-          alt="FastFood logo"
-          className="logo"
+          style={styles.logo}
+          alt="weegiefood logo"
+          src="https://www.healthymealplans.com/static/images/HMP-LOGO_horizontal.png"
         />
-        <img
-          src="resources/img/logo.png"
-          alt="FastFood logo"
-          className="logo-black"
-        />
-        <ul className="main-nav js--main-nav">
-          <li>
-            <a href="#features">{"Food delivery"}</a>
+        <ul style={styles.main_nav}>
+          <li style={styles.line_header}>
+            <a style={styles.sub_title} href="#meals">
+              Food delivery
+            </a>
           </li>
-          <li>
-            <a href="#works">{"How it works"}</a>
+          <li style={styles.line_header}>
+            <a style={styles.sub_title} href="#steps">
+              How it works
+            </a>
           </li>
-          <li>
-            <a href="#cites">{"Our cities"}</a>
+          <li style={styles.line_header}>
+            <a style={styles.sub_title} href="#cities">
+              Our cities
+            </a>
           </li>
-          <li>
-            <a href="#plans">{"Sign up"}</a>
+          <li style={styles.line_header}>
+            <a style={styles.sub_title} href="#plans">
+              Sign up
+            </a>
+          </li>
+          <li style={styles.line_header}>
+            <a style={styles.sub_title} href="#contact">
+              Contact
+            </a>
           </li>
         </ul>
-        <a className="mobile-nav-icon js--nav-icon ">
-          <ion-icon className="nav-icon" name="menu" />
-        </a>
       </div>
     </nav>
   );
