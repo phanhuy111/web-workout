@@ -4,11 +4,7 @@ import { Link } from "react-router-dom";
 import { styles } from "./styles";
 
 const Home = () => {
-  return (
-    <div style={styles.container}>
-      <h1>{"HOME SCREEN"}</h1>
-    </div>
-  );
+  return <div style={styles.container}></div>;
 };
 
 export default connect(null, null)(Home);

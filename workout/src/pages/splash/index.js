@@ -6,7 +6,15 @@ import { styles } from "./styles";
 const Splash = () => {
   return (
     <div style={styles.container}>
-      <h1>{"SPLASH SCREEN"}</h1>
+      <div style={styles.title}>
+        <span style={styles.title_text}>{"FAREWELL JUNK FOOD."}</span>
+        <span style={styles.title_text}>{"WELCOME SUPER HEALTHY MEALS"}</span>
+      </div>
+      <div style={styles.button}>
+        <Link to="/home" style={styles.button_text}>
+          {"GET STARTED"}
+        </Link>
+      </div>
     </div>
   );
 };

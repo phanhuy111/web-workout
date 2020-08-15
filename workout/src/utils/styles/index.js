@@ -5,7 +5,8 @@ export const styles = {
     flexDirection: "column",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "top",
-    padding: 20,
+    paddingLeft: 20,
+    paddingRight: 20,
   },
   wrapper: {
     height: "100%",

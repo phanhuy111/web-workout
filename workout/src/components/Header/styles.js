@@ -5,7 +5,7 @@ export const styles = {
   },
   logo: {
     width: 100,
-    marginTop: 20,
+    marginTop: 8,
     float: "left",
   },
   main_nav: {

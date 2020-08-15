@@ -14,28 +14,23 @@ const Header = () => {
         />
         <ul style={styles.main_nav}>
           <li style={styles.line_header}>
-            <a style={styles.sub_title} href="#meals">
-              Food delivery
+            <a style={styles.sub_title} href="/">
+              {"Food delivery"}
             </a>
           </li>
           <li style={styles.line_header}>
-            <a style={styles.sub_title} href="#steps">
-              How it works
+            <a style={styles.sub_title} href="/">
+              {"Contact"}
             </a>
           </li>
           <li style={styles.line_header}>
-            <a style={styles.sub_title} href="#cities">
-              Our cities
+            <a style={styles.sub_title} href="/">
+              {"Sign in"}
             </a>
           </li>
           <li style={styles.line_header}>
-            <a style={styles.sub_title} href="#plans">
-              Sign up
-            </a>
-          </li>
-          <li style={styles.line_header}>
-            <a style={styles.sub_title} href="#contact">
-              Contact
+            <a style={styles.sub_title} href="/">
+              {"Sign up"}
             </a>
           </li>
         </ul>
