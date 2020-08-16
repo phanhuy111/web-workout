@@ -6,8 +6,8 @@ const path = require("path");
 // routes
 
 // const userRoute = require('./api/routes/user.route');
-const foodRoute = require("./routes/food");
-const userRoute = require("./routes/user");
+const foodRoute = require("./src/routes/food");
+const userRoute = require("./src/routes/user");
 
 // connect mongodb
 mongoose.connect(
